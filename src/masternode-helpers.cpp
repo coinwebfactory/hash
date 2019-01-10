@@ -65,22 +65,24 @@ bool CMasternodeSigner::IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey)
                 if (txnheight <= GetSporkValue(SPORK_19_COLLAT_01)) {
                     collateral = 10000 * COIN;
                 } else if (txnheight <= GetSporkValue(SPORK_20_COLLAT_02)) {
-                    collateral = 20000 * COIN;
+                    collateral = 15000 * COIN;
                 } else if (txnheight <= GetSporkValue(SPORK_21_COLLAT_03)) {
-                    collateral = 30000 * COIN;
+                    collateral = 20000 * COIN;
                 } else if (txnheight <= GetSporkValue(SPORK_22_COLLAT_04)) {
-                    collateral = 40000 * COIN;
+                    collateral = 30000 * COIN;
                 } else if (txnheight <= GetSporkValue(SPORK_23_COLLAT_05)) {
-                    collateral = 50000 * COIN;
+                    collateral = 40000 * COIN;
                 } else if (txnheight <= GetSporkValue(SPORK_24_COLLAT_06)) {
-                    collateral = 60000 * COIN;
+                    collateral = 50000 * COIN;
                 } else if (txnheight <= GetSporkValue(SPORK_25_COLLAT_07)) {
-                    collateral = 70000 * COIN;
+                    collateral = 60000 * COIN;
                 } else if (txnheight <= GetSporkValue(SPORK_26_COLLAT_08)) {
-                    collateral = 80000 * COIN;
+                    collateral = 70000 * COIN;
                 } else if (txnheight <= GetSporkValue(SPORK_27_COLLAT_09)) {
-                    collateral = 90000 * COIN;
+                    collateral = 80000 * COIN;
                 } else if (txnheight <= GetSporkValue(SPORK_28_COLLAT_10)) {
+                    collateral = 900000 * COIN;
+                } else if (txnheight <= GetSporkValue(SPORK_29_COLLAT_11)) {
                     collateral = 100000 * COIN;
                 }
 

@@ -1623,25 +1623,27 @@ int64_t GetBlockValue(int nHeight)
     } else if (nHeight <= GetSporkValue(SPORK_19_COLLAT_01)) {
         nSubsidy = 1.2 * COIN;
     } else if (nHeight <= GetSporkValue(SPORK_20_COLLAT_02)) {
-        nSubsidy = 23.5 * COIN;
+        nSubsidy = 1.8 * COIN;
     } else if (nHeight <= GetSporkValue(SPORK_21_COLLAT_03)) {
-        nSubsidy = 44 * COIN;
+        nSubsidy = 17.5 * COIN;
     } else if (nHeight <= GetSporkValue(SPORK_22_COLLAT_04)) {
-        nSubsidy = 70 * COIN;
+        nSubsidy = 30.5 * COIN;
     } else if (nHeight <= GetSporkValue(SPORK_23_COLLAT_05)) {
-        nSubsidy = 101 * COIN;
+        nSubsidy = 46.5 * COIN;
     } else if (nHeight <= GetSporkValue(SPORK_24_COLLAT_06)) {
-        nSubsidy = 110 * COIN;
+        nSubsidy = 65 * COIN;
     } else if (nHeight <= GetSporkValue(SPORK_25_COLLAT_07)) {
-        nSubsidy = 92 * COIN;
+        nSubsidy = 68.5 * COIN;
     } else if (nHeight <= GetSporkValue(SPORK_26_COLLAT_08)) {
-        nSubsidy = 80 * COIN;
+        nSubsidy = 66 * COIN;
     } else if (nHeight <= GetSporkValue(SPORK_27_COLLAT_09)) {
-        nSubsidy = 86 * COIN;
+        nSubsidy = 60 * COIN;
     } else if (nHeight <= GetSporkValue(SPORK_28_COLLAT_10)) {
-        nSubsidy = 85 * COIN;
+        nSubsidy = 60 * COIN;
+    } else if (nHeight <= GetSporkValue(SPORK_29_COLLAT_11)) {
+        nSubsidy = 120 * COIN;
     } else {
-	nSubsidy = 0.1 * COIN;
+        nSubsidy = 0.1 * COIN;
     }
 
     int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
